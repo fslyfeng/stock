@@ -26,3 +26,9 @@
 
     nest g lib db
     #生成数据库db改目录为@libs
+
+    yarn add nestjs-typegoose @typegoose/typegoose
+    #安装数据库模块
+
+    yarn add mongoose @types/mongoose
+    #安装数据库和提示
