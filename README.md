@@ -10,6 +10,12 @@
 
 ### 后台(server)
 
-#### 服务端接口(server_api)
+    nest new server-api
+    #生成server-api目录文件
 
 #### 客户端接口(admin_api)
+
+    nest generate app admin_api
+    #进入server-api目录后生成admin-api工作空间
+
+#### 服务端接口(server_api)
