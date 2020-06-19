@@ -32,3 +32,13 @@
 
     yarn add mongoose @types/mongoose
     #安装数据库和提示
+
+    nest g mo -p admin-api users
+    nest g co -p admin-api users
+    # 在admin-api子项目中添加users模块/控制器
+
+    yarn add nestjs-mongoose-crud
+    #安装nestjs增删改查模块
+
+    yarn add @nestjs/swagger swagger-ui-express
+    #安装swagger接口文件包
