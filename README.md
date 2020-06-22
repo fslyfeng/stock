@@ -12,9 +12,12 @@
 
     后台(server)
 
-    客户端接口(admin_api)
+    客户端管理接口(admin_api)
+        用户表：User[username,password]
+        分类表：category[cate_name,cate_pic]
+        产品表：product[cate_id,pro_name,pro_pic]
 
-    服务端接口(server_api)
+    服务端管理接口(server_api)
 
 ## command
 
@@ -25,7 +28,7 @@
     #进入server-api目录后生成admin-api工作空间
 
     nest g lib db
-    #生成数据库db改目录为@libs
+    #生成数据库db，把默认目录改为@libs
 
     yarn add nestjs-typegoose @typegoose/typegoose
     #安装数据库模块
@@ -42,3 +45,11 @@
 
     yarn add @nestjs/swagger swagger-ui-express
     #安装swagger接口文件包
+
+    nest g mo -p admin-api category
+    nest g co -p admin-api category
+    #安装 category 模块和控制器
+
+    nest g mo -p admin-api product
+    nest g co -p admin-api product
+    #安装 category 模块和控制器
